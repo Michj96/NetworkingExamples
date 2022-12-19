@@ -3,9 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Networking", "Networking\Networking.csproj", "{D636A856-27B0-4A39-924B-1364EA8A8DCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unsecure", "Unsecure", "{0D5D9619-9B35-4979-AB04-F5FA3E567EB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Secure", "Secure", "{36A38021-9AB4-4CEA-B895-F27B33C15057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsecureClient", "UnsecureClient\UnsecureClient.csproj", "{A84A4BF0-D530-4CEB-9136-5BE62676C844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsecureServer", "UnsecureServer\UnsecureServer.csproj", "{8077D3B2-5CE5-4B8B-83F3-03504E771353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureClient", "SecureClient\SecureClient.csproj", "{5951EAC5-0323-4906-BD6B-484F1C612B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureServer", "SecureServer\SecureServer.csproj", "{1BC8E1F6-8ED7-49B9-935E-C2422F60B077}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D636A856-27B0-4A39-924B-1364EA8A8DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D636A856-27B0-4A39-924B-1364EA8A8DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D636A856-27B0-4A39-924B-1364EA8A8DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D636A856-27B0-4A39-924B-1364EA8A8DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84A4BF0-D530-4CEB-9136-5BE62676C844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84A4BF0-D530-4CEB-9136-5BE62676C844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84A4BF0-D530-4CEB-9136-5BE62676C844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84A4BF0-D530-4CEB-9136-5BE62676C844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8077D3B2-5CE5-4B8B-83F3-03504E771353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8077D3B2-5CE5-4B8B-83F3-03504E771353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8077D3B2-5CE5-4B8B-83F3-03504E771353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8077D3B2-5CE5-4B8B-83F3-03504E771353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5951EAC5-0323-4906-BD6B-484F1C612B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5951EAC5-0323-4906-BD6B-484F1C612B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5951EAC5-0323-4906-BD6B-484F1C612B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5951EAC5-0323-4906-BD6B-484F1C612B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC8E1F6-8ED7-49B9-935E-C2422F60B077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC8E1F6-8ED7-49B9-935E-C2422F60B077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC8E1F6-8ED7-49B9-935E-C2422F60B077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC8E1F6-8ED7-49B9-935E-C2422F60B077}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A84A4BF0-D530-4CEB-9136-5BE62676C844} = {0D5D9619-9B35-4979-AB04-F5FA3E567EB7}
+		{8077D3B2-5CE5-4B8B-83F3-03504E771353} = {0D5D9619-9B35-4979-AB04-F5FA3E567EB7}
+		{5951EAC5-0323-4906-BD6B-484F1C612B42} = {36A38021-9AB4-4CEA-B895-F27B33C15057}
+		{1BC8E1F6-8ED7-49B9-935E-C2422F60B077} = {36A38021-9AB4-4CEA-B895-F27B33C15057}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDECF327-DFD3-4A24-9A86-721ED92A657C}
